@@ -1,0 +1,3 @@
+#!/bin/bash
+FLINK_DIRNAME=${PARCEL_DIRNAME:-"FLINK-1.0.3"}
+export CDH_FLINK_HOME=$PARCELS_ROOT/$FLINK_DIRNAME/usr/lib/flink/

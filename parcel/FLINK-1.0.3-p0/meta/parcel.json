@@ -1,0 +1,42 @@
+{
+  "schema_version":     1,
+  "name":               "FLINK",
+  "version":            "1.0.3-p0",
+
+  "depends":            "",
+
+  "setActiveSymlink":   true,
+
+  "scripts": {
+    "defines": "flink_env.sh"
+  },
+
+  "packages": [
+    { "name":    "flink-core",
+      "version": "1.0.3"
+    }
+  ],
+
+  "components": [
+    { "name":     "flink",
+      "version":  "1.0.3-p0",
+      "pkg_version":  "1.0.3-p0",
+      "pkg_release": "" 
+    }
+  ],
+
+  "provides": [
+    "flink"
+  ],
+
+  "users": {
+     "flink": {
+       "longname"    : "Flink",
+       "home"        : "usr/lib/flink",
+       "shell"       : "/sbin/nologin",
+       "extra_groups": [ ]
+     }
+  },
+
+  "groups": [ ]
+}
