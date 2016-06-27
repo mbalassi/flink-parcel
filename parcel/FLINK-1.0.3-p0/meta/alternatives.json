@@ -5,6 +5,12 @@
       "priority": 10,
       "isDirectory": false
     },
+    "flink-conf": {
+      "destination": "/etc/flink/conf",
+      "source": "etc/flink/conf.dist",
+      "priority": 10,
+      "isDirectory": true
+    },
     "flink-jobmanager": {
       "destination": "/etc/rc.d/init.d/flink-jobmanager",
       "source": "etc/rc.d/init.d/flink-jobmanager",
@@ -16,17 +22,5 @@
       "source": "etc/rc.d/init.d/flink-taskmanager",
       "priority": 10,
       "isDirectory": false
-    },
-    "flink-conf-global": {
-      "destination": "/etc/flink/conf",
-      "source": "etc/flink/conf.dist",
-      "priority": 10,
-      "isDirectory": true
-    },
-    "flink-conf-local": {
-      "destination": "usr/lib/flink/conf",
-      "source": "etc/flink/conf.dist",
-      "priority": 10,
-      "isDirectory": true
     }
 }
