@@ -32,8 +32,8 @@
   "users": {
      "flink": {
        "longname"    : "Flink",
-       "home"        : "usr/lib/flink",
-       "shell"       : "/sbin/nologin",
+       "home"        : "/var/lib/flink",
+       "shell"       : "/bin/bash",
        "extra_groups": [ ]
      }
   },
