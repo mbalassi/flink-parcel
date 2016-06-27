@@ -76,6 +76,7 @@ start() {
     log_success_msg "Starting $DESC (${DAEMON}): "
 
     export FLINK_LOG_DIR="/var/log/flink"
+    mkdir -p $FLINK_LOG_DIR
     export FLINK_PID_DIR="/var/run/flink"
     mkdir -p $FLINK_PID_DIR
 
