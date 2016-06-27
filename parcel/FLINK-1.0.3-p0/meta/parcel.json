@@ -3,7 +3,7 @@
   "name":               "FLINK",
   "version":            "1.0.3-p0",
 
-  "depends":            "",
+  "depends":            "CDH",
 
   "setActiveSymlink":   true,
 
