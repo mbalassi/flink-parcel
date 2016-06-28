@@ -1,0 +1,70 @@
+{
+  "name" : "FLINK",
+  "label" : "Flink",
+  "description" : "Flink distributed data platform",
+  "version" : "1.0.3",
+  "runAs" : {
+    "user" : "flink",
+    "group" : "flink"
+   },
+   "roles" : [
+    {
+       "name" : "FLINK_JOBMANAGER",
+       "label" : "JobManager",
+       "pluralLabel" : "JobManagers",
+       "parameters" : [
+        {
+          "name" : "java_home",
+          "label" : "Java Home",
+          "description" : "Java Home",
+          "required" : "true",
+          "type" : "string",
+          "default" : "/usr/java/jdk1.7.0_67-cloudera/"
+        }
+      ],
+      "startRunner" : {
+         "program" : "service flink-jobmanager",
+         "args" : [ "start" ],
+         "environmentVariables" : {
+           "JAVA_HOME" : "${java_home}"
+         }
+      },
+      "stopRunner" : {
+         "program" : "service flink-jobmanager",
+         "args" : [ "stop" ],
+         "environmentVariables" : {
+           "JAVA_HOME" : "${java_home}"
+         }
+      }
+    },
+    {
+      "name" : "FLINK_TASKMANAGER",
+      "label" : "TaskManager",
+      "pluralLabel" : "TaskManagers",
+      "parameters" : [
+       {
+         "name" : "java_home",
+         "label" : "Java Home",
+         "description" : "Java Home",
+         "required" : "true",
+         "type" : "string",
+         "default" : "/usr/java/jdk1.7.0_67-cloudera/"
+       }
+     ],
+      "startRunner" : {
+         "program" : "service flink-taskmanager",
+         "args" : [ "start" ],
+         "environmentVariables" : {
+           "JAVA_HOME" : "${java_home}"
+         }
+      },
+      "stopRunner" : {
+         "program" : "service flink-taskmanager",
+         "args" : [ "stop" ],
+         "environmentVariables" : {
+           "JAVA_HOME" : "${java_home}"
+         }
+      }
+    }
+  ]
+}
