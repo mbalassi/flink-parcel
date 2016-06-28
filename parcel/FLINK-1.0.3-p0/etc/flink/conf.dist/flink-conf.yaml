@@ -56,6 +56,9 @@ taskmanager.memory.preallocate: false
 
 parallelism.default: 1
 
+# Cloudera distribution compliant log dir
+
+env.log.dir: /var/log/flink
 
 #==============================================================================
 # Web Frontend
