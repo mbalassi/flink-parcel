@@ -11,6 +11,12 @@
       "priority": 10,
       "isDirectory": true
     },
+    "flink-bin": {
+      "destination": "/usr/lib/flink/bin",
+      "source": "usr/lib/flink/bin",
+      "priority": 10,
+      "isDirectory": true
+    },
     "flink-jobmanager": {
       "destination": "/etc/rc.d/init.d/flink-jobmanager",
       "source": "etc/rc.d/init.d/flink-jobmanager",
