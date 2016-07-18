@@ -4,9 +4,10 @@
   "description" : "Flink distributed data platform",
   "version" : "1.0.3",
   "runAs" : {
-    "user" : "flink",
-    "group" : "flink"
+    "user" : "ec2-user",
+    "group" : "ec2-user"
    },
+   "icon" : "images/flink.png",
    "roles" : [
     {
        "name" : "FLINK_JOBMANAGER",
