@@ -23,15 +23,15 @@
         }
       ],
       "startRunner" : {
-         "program" : "service flink-jobmanager",
-         "args" : [ "start" ],
+         "program" : "scripts/control.sh",
+         "args" : [ "jobmanager-start" ],
          "environmentVariables" : {
            "JAVA_HOME" : "${java_home}"
          }
       },
       "stopRunner" : {
-         "program" : "service flink-jobmanager",
-         "args" : [ "stop" ],
+         "program" : "scripts/control.sh",
+         "args" : [ "jobmanager-stop" ],
          "environmentVariables" : {
            "JAVA_HOME" : "${java_home}"
          }
@@ -52,15 +52,15 @@
        }
      ],
       "startRunner" : {
-         "program" : "service flink-taskmanager",
-         "args" : [ "start" ],
+         "program" : "scripts/control.sh",
+         "args" : [ "taskmanager-start" ],
          "environmentVariables" : {
            "JAVA_HOME" : "${java_home}"
          }
       },
       "stopRunner" : {
-         "program" : "service flink-taskmanager",
-         "args" : [ "stop" ],
+         "program" : "scripts/control.sh",
+         "args" : [ "taskmanager-stop" ],
          "environmentVariables" : {
            "JAVA_HOME" : "${java_home}"
          }
