@@ -1,0 +1,42 @@
+{
+  "schema_version":     1,
+  "name":               "FLINK",
+  "version":            "1.8.0-cdh6.2.0-p0",
+
+  "depends":            "CDH",
+
+  "setActiveSymlink":   true,
+
+  "scripts": {
+    "defines": "flink_env.sh"
+  },
+
+  "packages": [
+    { "name":    "flink-core",
+      "version": "1.8.0"
+    }
+  ],
+
+  "components": [
+    { "name":     "flink",
+      "version":  "1.8.0-cdh6.2.0-p0",
+      "pkg_version":  "1.8.0-cdh6.2.0-p0",
+      "pkg_release": "" 
+    }
+  ],
+
+  "provides": [
+    "flink"
+  ],
+
+  "users": {
+     "flink": {
+       "longname"    : "Flink",
+       "home"        : "/var/lib/flink",
+       "shell"       : "/bin/bash",
+       "extra_groups": [ ]
+     }
+  },
+
+  "groups": [ ]
+}

@@ -1,0 +1,20 @@
+{
+    "flink": {
+      "destination": "/usr/bin/flink",
+      "source": "usr/lib/flink/bin/flink",
+      "priority": 10,
+      "isDirectory": false
+    },
+    "flink-conf": {
+      "destination": "/etc/flink/conf",
+      "source": "etc/flink/conf.dist",
+      "priority": 10,
+      "isDirectory": true
+    },
+    "flink-bin": {
+      "destination": "/usr/lib/flink/bin",
+      "source": "usr/lib/flink/bin",
+      "priority": 10,
+      "isDirectory": true
+    }
+}
